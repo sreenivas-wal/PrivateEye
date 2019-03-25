@@ -1,0 +1,89 @@
+PODS:
+  - AKImageCropperView (2.0.0)
+  - Alamofire (4.3.0)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - DTPhotoViewerController (1.0.2)
+  - ExpandingMenu (0.4.0)
+  - Fabric (1.6.7)
+  - InputMask (2.2.0)
+  - KeychainAccess (3.0.1)
+  - KMPlaceholderTextView (1.3.0)
+  - MBProgressHUD (1.0.0)
+  - MGSwipeTableCell (1.5.6)
+  - NSStringMask (1.2.2)
+  - OCMock (2.2.4)
+  - ReachabilitySwift (4.1.0)
+  - RNCryptor (5.0.1)
+  - SimulatorStatusMagic (1.8)
+  - SlideMenuControllerSwift (3.0.1)
+  - SwiftyJSON (3.1.3)
+  - TTTAttributedLabel (2.0.0)
+
+DEPENDENCIES:
+  - AKImageCropperView
+  - Alamofire (~> 4.0)
+  - Crashlytics
+  - DTPhotoViewerController
+  - ExpandingMenu (~> 0.4)
+  - Fabric
+  - InputMask
+  - KeychainAccess (~> 3.0)
+  - KMPlaceholderTextView (~> 1.3.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MGSwipeTableCell
+  - NSStringMask (~> 1.2.2)
+  - OCMock (~> 2.2.4)
+  - ReachabilitySwift
+  - RNCryptor (~> 5.0)
+  - SimulatorStatusMagic (~> 1.8)
+  - SlideMenuControllerSwift
+  - SwiftyJSON
+  - TTTAttributedLabel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKImageCropperView
+    - Alamofire
+    - Crashlytics
+    - DTPhotoViewerController
+    - ExpandingMenu
+    - Fabric
+    - InputMask
+    - KeychainAccess
+    - KMPlaceholderTextView
+    - MBProgressHUD
+    - MGSwipeTableCell
+    - NSStringMask
+    - OCMock
+    - ReachabilitySwift
+    - RNCryptor
+    - SimulatorStatusMagic
+    - SlideMenuControllerSwift
+    - SwiftyJSON
+    - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  AKImageCropperView: 9c80fd45512daa69426161ad51c248655c1b5182
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  DTPhotoViewerController: 22d6835b407bab1201eaf2f1576f552188eb040c
+  ExpandingMenu: 3187a4ed1aa1aea85418e444c213e4cd6063c122
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  InputMask: 3ddf00fd7eeaf6954170e7f1eab11c96b233e2a9
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  NSStringMask: c0969955b28c4286418197696469665d9dcba313
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
+  SimulatorStatusMagic: 4dbf0faa0208e9ac0d56cea06eaa5f7a5f3d02fb
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+
+PODFILE CHECKSUM: 9a803df6ad6a21b289fcb158b0c319395018d851
+
+COCOAPODS: 1.5.3

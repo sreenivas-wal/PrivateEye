@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="26t-cb-0Jb" customClass="PreviewView" customModule="ApplicationTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWF-jb-ilb">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmt-OF-hYB">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                    <connections>
+                        <action selector="didTapPreview:" destination="26t-cb-0Jb" eventType="touchUpInside" id="hfa-CR-asT"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvq-QU-T2a">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                    <color key="backgroundColor" white="0.67000000000000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hvq-QU-T2a" firstAttribute="top" secondItem="26t-cb-0Jb" secondAttribute="top" id="6ET-SW-uMT"/>
+                <constraint firstAttribute="trailing" secondItem="Hmt-OF-hYB" secondAttribute="trailing" id="6RO-j2-KVU"/>
+                <constraint firstItem="JWF-jb-ilb" firstAttribute="top" secondItem="26t-cb-0Jb" secondAttribute="top" id="7mb-Mg-cXF"/>
+                <constraint firstAttribute="bottom" secondItem="hvq-QU-T2a" secondAttribute="bottom" id="JdN-j5-cA7"/>
+                <constraint firstAttribute="bottom" secondItem="JWF-jb-ilb" secondAttribute="bottom" id="L1v-jc-hLH"/>
+                <constraint firstItem="hvq-QU-T2a" firstAttribute="leading" secondItem="26t-cb-0Jb" secondAttribute="leading" id="QhI-V2-Sdc"/>
+                <constraint firstItem="Hmt-OF-hYB" firstAttribute="top" secondItem="26t-cb-0Jb" secondAttribute="top" id="Ui6-fr-aOx"/>
+                <constraint firstAttribute="trailing" secondItem="hvq-QU-T2a" secondAttribute="trailing" id="Xt7-io-VhH"/>
+                <constraint firstAttribute="trailing" secondItem="JWF-jb-ilb" secondAttribute="trailing" id="jcu-6G-kiN"/>
+                <constraint firstItem="Hmt-OF-hYB" firstAttribute="leading" secondItem="26t-cb-0Jb" secondAttribute="leading" id="oKM-FJ-Juc"/>
+                <constraint firstAttribute="bottom" secondItem="Hmt-OF-hYB" secondAttribute="bottom" id="qgc-pN-t1c"/>
+                <constraint firstItem="JWF-jb-ilb" firstAttribute="leading" secondItem="26t-cb-0Jb" secondAttribute="leading" id="zz4-eI-oWb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="JWF-jb-ilb" id="fUU-e1-YAW"/>
+                <outlet property="progressIndicatorView" destination="hvq-QU-T2a" id="xu9-I7-2oI"/>
+            </connections>
+            <point key="canvasLocation" x="-32" y="61"/>
+        </view>
+    </objects>
+</document>

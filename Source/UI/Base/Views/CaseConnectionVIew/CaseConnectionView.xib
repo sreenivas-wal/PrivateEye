@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaseConnectionView" customModule="MyMobileED" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="lHI-cd-VvW" id="N1O-TN-WsA"/>
+                <outlet property="titleLabel" destination="HbD-rB-KOA" id="IFq-F8-xNM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="WARNING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-rB-KOA">
+                    <rect key="frame" x="20" y="26" width="69.5" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csy-eh-i7Q">
+                    <rect key="frame" x="20" y="115" width="157.5" height="60"/>
+                    <color key="backgroundColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="0.89800941780821919" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3XZ-ji-0Xs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                    <state key="normal" title="CANCEL">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonCancelTapped:" destination="-1" eventType="touchUpInside" id="NUS-Li-wHO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-Ax-44y">
+                    <rect key="frame" x="197.5" y="115" width="157.5" height="60"/>
+                    <color key="backgroundColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0yZ-k0-q5x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                    <state key="normal" title="CONNECT">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonConnectTapped:" destination="-1" eventType="touchUpInside" id="CX6-jb-1Jb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone detected out of case, please return phone to case" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-cd-VvW">
+                    <rect key="frame" x="20" y="52" width="335" height="43"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="0.16078431372549018" green="0.1764705882352941" blue="0.20784313725490194" alpha="0.5975492294520548" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HbD-rB-KOA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4Sb-q8-jfC"/>
+                <constraint firstAttribute="trailing" secondItem="lHI-cd-VvW" secondAttribute="trailing" constant="20" id="5SH-6Q-BxZ"/>
+                <constraint firstAttribute="bottom" secondItem="Jsv-Ax-44y" secondAttribute="bottom" constant="20" id="GHr-lx-vp3"/>
+                <constraint firstItem="Jsv-Ax-44y" firstAttribute="width" secondItem="Csy-eh-i7Q" secondAttribute="width" id="O3b-Ax-r11"/>
+                <constraint firstItem="Jsv-Ax-44y" firstAttribute="top" secondItem="lHI-cd-VvW" secondAttribute="bottom" constant="20" id="cQa-Ry-aY4"/>
+                <constraint firstItem="lHI-cd-VvW" firstAttribute="top" secondItem="HbD-rB-KOA" secondAttribute="bottom" constant="6" id="ddy-yb-WoC"/>
+                <constraint firstItem="Csy-eh-i7Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jWE-Yx-5eb"/>
+                <constraint firstItem="Jsv-Ax-44y" firstAttribute="leading" secondItem="Csy-eh-i7Q" secondAttribute="trailing" constant="20" id="mqu-sw-jHy"/>
+                <constraint firstAttribute="bottom" secondItem="Csy-eh-i7Q" secondAttribute="bottom" constant="20" id="pEz-aD-qGh"/>
+                <constraint firstAttribute="trailing" secondItem="Jsv-Ax-44y" secondAttribute="trailing" constant="20" id="u2C-M3-Pjs"/>
+                <constraint firstItem="HbD-rB-KOA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="x8l-YV-4r7"/>
+                <constraint firstItem="lHI-cd-VvW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="xFf-wP-jrg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset ">
+                    <size key="value" width="0.0" height="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                    <real key="value" value="0.10000000000000001"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="26.5" y="261.5"/>
+        </view>
+    </objects>
+</document>

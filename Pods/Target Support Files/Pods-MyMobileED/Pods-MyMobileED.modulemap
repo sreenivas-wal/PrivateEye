@@ -1,0 +1,6 @@
+framework module Pods_MyMobileED {
+  umbrella header "Pods-MyMobileED-umbrella.h"
+
+  export *
+  module * { export * }
+}

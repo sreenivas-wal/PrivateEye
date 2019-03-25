@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "arrowThinRight@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "arrowThinRight@3x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "arrowThinRight.png"
+    }
+  ],
+  "info" : {
+    "author" : "zeplin",
+    "version" : "1"
+  }
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FolderTableViewCell" rowHeight="93" id="pbu-B8-fPb" customClass="FolderTableViewCell" customModule="PrivateEyeHC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pbu-B8-fPb" id="s3E-Na-BP6">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder-icon" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-XI-JeE">
+                        <rect key="frame" x="20" y="24" width="44" height="44"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="H3a-2o-EvO"/>
+                            <constraint firstAttribute="height" constant="44" id="JhW-Ho-jP1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FOLDER TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzx-CF-IYr">
+                        <rect key="frame" x="84" y="30" width="271" height="32.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.32549019610000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ny-qU-jtk">
+                        <rect key="frame" x="84" y="64.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.16078431369999999" green="0.1764705882" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Ny-qU-jtk" firstAttribute="leading" secondItem="QEQ-XI-JeE" secondAttribute="trailing" constant="20" id="82P-1E-FFf"/>
+                    <constraint firstItem="hzx-CF-IYr" firstAttribute="leading" secondItem="QEQ-XI-JeE" secondAttribute="trailing" constant="20" id="8CB-C8-Deg"/>
+                    <constraint firstItem="QEQ-XI-JeE" firstAttribute="leading" secondItem="s3E-Na-BP6" secondAttribute="leading" constant="20" id="9EA-Ep-two"/>
+                    <constraint firstItem="hzx-CF-IYr" firstAttribute="centerY" secondItem="s3E-Na-BP6" secondAttribute="centerY" id="Ffg-4Y-lUF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0Ny-qU-jtk" secondAttribute="bottom" constant="20" id="MX1-Hs-iSw"/>
+                    <constraint firstItem="QEQ-XI-JeE" firstAttribute="top" secondItem="s3E-Na-BP6" secondAttribute="top" constant="24" id="ifb-SU-sVM"/>
+                    <constraint firstItem="0Ny-qU-jtk" firstAttribute="top" secondItem="hzx-CF-IYr" secondAttribute="bottom" constant="2" id="w3n-T4-Uwn"/>
+                    <constraint firstAttribute="trailing" secondItem="hzx-CF-IYr" secondAttribute="trailing" constant="20" id="w4G-SH-62q"/>
+                    <constraint firstItem="hzx-CF-IYr" firstAttribute="top" secondItem="s3E-Na-BP6" secondAttribute="top" constant="30" id="yqn-Cz-SnU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="foldeImageView" destination="QEQ-XI-JeE" id="6KB-Ja-TPK"/>
+                <outlet property="subtitleLabel" destination="0Ny-qU-jtk" id="wIh-Tk-34o"/>
+                <outlet property="titleLabel" destination="hzx-CF-IYr" id="FTN-Qj-w3e"/>
+            </connections>
+            <point key="canvasLocation" x="-92.5" y="-131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="folder-icon" width="42" height="43"/>
+    </resources>
+</document>

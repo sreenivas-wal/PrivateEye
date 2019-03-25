@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5114D508-3267-4A2C-AC67-D941AE2922D1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1F0AD15C8D42544B5439E03CBA270AC377CC920F</key>
+		<string>bitbucket.org:nixsolutions/nps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NIXProjectSwift.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1F0AD15C8D42544B5439E03CBA270AC377CC920F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:nixsolutions/nps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1F0AD15C8D42544B5439E03CBA270AC377CC920F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1F0AD15C8D42544B5439E03CBA270AC377CC920F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nps</string>
+		</dict>
+	</array>
+</dict>
+</plist>

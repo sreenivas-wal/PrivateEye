@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1F0AD15C8D42544B5439E03CBA270AC377CC920F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3396B9486D7B0A61EC812B95A62D9EF796F34D99" : 9223372036854775807,
+    "1F0AD15C8D42544B5439E03CBA270AC377CC920F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EE35EB81-E29B-43E1-93A3-B6D908ACD7B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3396B9486D7B0A61EC812B95A62D9EF796F34D99" : "MMED\/Scripts\/NIXImagesValidator\/",
+    "1F0AD15C8D42544B5439E03CBA270AC377CC920F" : "MMED\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyMobileED",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyMobileED.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "nix.githost.io:NIX_iPhone_Production\/MMED.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F0AD15C8D42544B5439E03CBA270AC377CC920F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:nixsolutions\/nixipl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3396B9486D7B0A61EC812B95A62D9EF796F34D99"
+    }
+  ]
+}

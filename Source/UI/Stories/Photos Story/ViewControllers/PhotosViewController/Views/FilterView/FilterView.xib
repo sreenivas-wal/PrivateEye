@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterView" customModule="MyMobileED" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonClearFilter" destination="6Y7-dh-ubN" id="qJA-JJ-R0b"/>
+                <outlet property="tableView" destination="4N3-ix-lLe" id="XgO-5X-0Ze"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8V-09-dww">
+                    <rect key="frame" x="0.0" y="44" width="375" height="240"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-ix-lLe">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="KH9-JM-hjW"/>
+                                <outlet property="delegate" destination="-1" id="xWH-AR-5uP"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4N3-ix-lLe" firstAttribute="top" secondItem="x8V-09-dww" secondAttribute="top" id="8QX-Gf-GWP"/>
+                        <constraint firstAttribute="trailing" secondItem="4N3-ix-lLe" secondAttribute="trailing" id="UO7-Fb-oo8"/>
+                        <constraint firstItem="4N3-ix-lLe" firstAttribute="leading" secondItem="x8V-09-dww" secondAttribute="leading" id="hc7-Ut-TCx"/>
+                        <constraint firstAttribute="bottom" secondItem="4N3-ix-lLe" secondAttribute="bottom" id="s44-nA-iRW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDr-9j-par">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-dh-ubN">
+                            <rect key="frame" x="252" y="7" width="103" height="30"/>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                            <state key="normal" title="CLEAR FILTERS">
+                                <color key="titleColor" red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClearFilterTapped:" destination="-1" eventType="touchUpInside" id="2FM-Rl-JuY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-Hj-Xjj">
+                            <rect key="frame" x="5" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="GkV-iY-Qfi"/>
+                                <constraint firstAttribute="height" constant="44" id="WQ9-fp-p18"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <state key="normal" title="Button" image="cross"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="yUT-vh-Ezk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6Y7-dh-ubN" firstAttribute="top" secondItem="NDr-9j-par" secondAttribute="top" constant="7" id="1Qo-q6-aXp"/>
+                        <constraint firstItem="qbc-Hj-Xjj" firstAttribute="leading" secondItem="NDr-9j-par" secondAttribute="leading" constant="5" id="LeM-sI-HIa"/>
+                        <constraint firstAttribute="height" constant="44" id="fRm-0Z-ECT"/>
+                        <constraint firstAttribute="bottom" secondItem="6Y7-dh-ubN" secondAttribute="bottom" constant="7" id="joV-7h-5P7"/>
+                        <constraint firstItem="qbc-Hj-Xjj" firstAttribute="centerY" secondItem="NDr-9j-par" secondAttribute="centerY" id="p3z-DX-noM"/>
+                        <constraint firstAttribute="trailing" secondItem="6Y7-dh-ubN" secondAttribute="trailing" constant="20" id="uSO-68-10Q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset ">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x8V-09-dww" firstAttribute="top" secondItem="NDr-9j-par" secondAttribute="bottom" id="0Rf-6f-UjS"/>
+                <constraint firstItem="NDr-9j-par" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fj9-Gh-tiU"/>
+                <constraint firstItem="NDr-9j-par" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G7w-Cf-ob1"/>
+                <constraint firstAttribute="bottom" secondItem="x8V-09-dww" secondAttribute="bottom" id="KCj-mJ-hG4"/>
+                <constraint firstAttribute="trailing" secondItem="x8V-09-dww" secondAttribute="trailing" id="UHh-Bp-atj"/>
+                <constraint firstAttribute="trailing" secondItem="NDr-9j-par" secondAttribute="trailing" id="Z2U-u8-aNn"/>
+                <constraint firstItem="x8V-09-dww" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gkO-5T-2nk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="28" height="28"/>
+    </resources>
+</document>

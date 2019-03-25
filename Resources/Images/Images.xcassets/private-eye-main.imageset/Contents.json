@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "privateEyeHc@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "privateEyeHc@3x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "privateEyeHc.png"
+    }
+  ],
+  "info" : {
+    "author" : "zeplin",
+    "version" : "1"
+  }
+}

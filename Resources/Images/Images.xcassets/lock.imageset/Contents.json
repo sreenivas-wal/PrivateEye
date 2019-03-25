@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "lock.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "lock@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "lock@3x.png"
+    }
+  ],
+  "properties" : {
+    "template-rendering-intent" : "original"
+  },
+  "info" : {
+    "author" : "zeplin",
+    "version" : "1"
+  }
+}
